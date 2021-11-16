@@ -5,10 +5,12 @@ import './Jogador.css'
 const Jogador = (props) => {
     console.log(props.dataJogador)
 
-    const {nome, sobrenome, idade, nivel, telefone} = props.dataJogador
+    const { nome, sobrenome, idade, nivel, telefone} = props.dataJogador;
+
     return(
         <>
             <div className="container-jogador">
+                <button className='button-delete-player' onClick={props.removePlayer}>&times;</button>
                <ul>
                     <li>  
                         <label>Nome:</label> 

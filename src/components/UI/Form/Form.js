@@ -12,9 +12,8 @@ const Form = (props) => {
     const teste = (event) => {
         event.preventDefault();
     
-   
-   
         const jogador = {
+            id: Math.floor(Math.random() * 100),
             nome: nome,
             sobrenome: sobrenome,
             idade: idade,

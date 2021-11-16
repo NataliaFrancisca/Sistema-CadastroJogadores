@@ -5,6 +5,7 @@
     margin: 1rem 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+    position: relative;
 }
 
 label{
@@ -69,4 +70,31 @@ p{
 .nivel-bar.level-1 .circle:nth-child(-n+1){
     background-color: rgba(46,139,87);
     color: white;
+}
+
+.button-delete-player{
+    height: 30px;
+    width: 30px;
+
+    padding: .5rem;
+
+    border-radius: 50px;
+
+    background-color: #FF6CA8;;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+
+    position: absolute;
+    right: 1rem;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.button-delete-player:hover{
+    filter: grayscale(40%);
 }
